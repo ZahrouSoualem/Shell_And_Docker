@@ -12,10 +12,10 @@ func main() {
 	fmt.Scanf("%d", &a)
 	fmt.Println("the variable is :", a) */
 
-	conf, err := util.ConfigurationFile(".")
+	conf, err := util.ConfigurationFile()
 
 	if err != nil {
-		fmt.Errorf("the err ", err)
+		fmt.Println("the err ", err)
 	}
 
 	fmt.Println("our config file as Name : ", conf.Name)

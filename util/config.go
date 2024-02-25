@@ -10,9 +10,9 @@ type Config struct {
 	Name string `mapstructure:"Name"`
 }
 
-func ConfigurationFile(path string) (config Config, err error) {
+func ConfigurationFile() (config Config, err error) {
 
-	viper.AddConfigPath(path)
+	viper.AddConfigPath(".")
 	viper.SetConfigName("app") // name of config file (without extension)
 	viper.SetConfigType("env") // REQUIRED if the config file does not have the extension in the name
 
