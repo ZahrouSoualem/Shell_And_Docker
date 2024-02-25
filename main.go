@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/dockerintro/util"
+)
 
 func main() {
 	/* var a int
@@ -8,5 +12,11 @@ func main() {
 	fmt.Scanf("%d", &a)
 	fmt.Println("the variable is :", a) */
 
-	fmt.Println("testing envirenment variable with shell script")
+	conf, err := util.ConfigurationFile(".")
+
+	if err != nil {
+		fmt.Errorf("the err ", err)
+	}
+
+	fmt.Println("our config file as Name : ", conf.Name)
 }
