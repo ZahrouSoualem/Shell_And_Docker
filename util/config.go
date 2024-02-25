@@ -16,6 +16,8 @@ func ConfigurationFile() (config Config, err error) {
 	viper.SetConfigName("app") // name of config file (without extension)
 	viper.SetConfigType("env") // REQUIRED if the config file does not have the extension in the name
 
+	/*AutomaticEnv makes Viper check if environment variables match any of the existing
+	keys (config, default or flags). If matching env vars are found, they are loaded into Viper.*/
 	viper.AutomaticEnv()
 
 	err = viper.ReadInConfig() // Find and read the config file
