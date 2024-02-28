@@ -11,7 +11,7 @@ type Config struct {
 }
 
 func ConfigurationFile() (config Config, err error) {
-
+	//Hello
 	viper.AddConfigPath(".")
 	viper.SetConfigName("app") // name of config file (without extension)
 	viper.SetConfigType("env") // REQUIRED if the config file does not have the extension in the name

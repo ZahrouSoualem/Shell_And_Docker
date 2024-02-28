@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	//world
 	/* var a int
 	fmt.Print("enter a number :")
 	fmt.Scanf("%d", &a)
