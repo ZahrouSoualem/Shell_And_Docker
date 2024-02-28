@@ -10,8 +10,7 @@ func main() {
 	//soualem
 	//Eddine
 	//Eddine
-	//changes in haled branch
-	//squash changes 2
+	//we are doing changes in main branch
 	/* var a int
 	fmt.Print("enter a number :")
 	fmt.Scanf("%d", &a)
